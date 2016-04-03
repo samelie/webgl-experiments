@@ -40,7 +40,7 @@ function webGLStart( meshes ) {
 
 window.onload = function(){
   OBJ.downloadMeshes({
-      'suzanne': 'models/gnomelowcountsmall.obj'
+      'suzanne': 'first/models/gnomelowcountsmall.obj'
     },
     webGLStart
   );
