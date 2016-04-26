@@ -1,0 +1,45 @@
+{
+  "name": "react-map-gl-stack-gl-overlay-example",
+  "version": "0.3.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "start": "budo index.js:bundle.js --host 0.0.0.0 --live --open -- -t babelify  | bistre"
+  },
+  "keywords": [],
+  "author": "Victor Powell",
+  "license": "ISC",
+  "dependencies": {
+    "get-canvas-context": "^1.0.1",
+    "gl-buffer": "^2.1.2",
+    "gl-now": "^1.4.0",
+    "gl-shader": "^4.0.6",
+    "gl-texture2d": "^2.0.10",
+    "gl-vao": "^1.2.1",
+    "global": "^4.3.0",
+    "glslify": "^2.3.1",
+    "object-assign": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.1.18",
+    "babelify": "^7.2.0",
+    "bistre": "^1.0.1",
+    "browserify": "^11.1.0",
+    "bunny": "^1.0.1",
+    "envify": "^3.4.0",
+    "gl-buffer": "^2.1.2",
+    "gl-geometry": "^3.1.0",
+    "gl-matrix": "^2.3.2",
+    "gl-mesh": "^0.1.0",
+    "gl-now": "^1.4.0",
+    "gl-vao": "^1.2.1",
+    "icosphere": "^1.0.0",
+    "orbit-camera": "^1.0.0",
+    "primitive-plane": "^1.0.1",
+    "simple-3d-shader": "0.0.0",
+    "uglify-js": "^2.4.21"
+  }
+}
