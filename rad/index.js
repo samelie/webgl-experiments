@@ -1,6 +1,8 @@
-//import {mat4} from 'gl-matrix'
+import glm from 'gl-matrix';
+//const mat4 = glm.mat4;
 import sphere from './sphere'
 import cube from './cube'
+//import Mesh from './mesh'
 
 var Sphere = new sphere(1, 26)
 var Cube = new sphere(1, 1, 1)
@@ -68,6 +70,9 @@ var Cube = new sphere(1, 1, 1)
     var mvMatrix = mat4.create();
     var mvMatrixStack = [];
     var pMatrix = mat4.create();
+    console.log(pMatrix);
+    console.log(mvMatrix);
+    
     function mvPushMatrix() {
         var copy = mat4.create();
         mat4.set(mvMatrix, copy);
