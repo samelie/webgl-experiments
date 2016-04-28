@@ -1,3 +1,5 @@
+import Mesh from './mesh'
+
 export default function(size, numSegments, withNormals=false, isInvert=false, drawType=4) {
 	let positions = [];
 	let coords    = [];
@@ -65,13 +67,13 @@ export default function(size, numSegments, withNormals=false, isInvert=false, dr
 		indices.reverse();
 	}
 
-	// let mesh = new Mesh(drawType);
-	// mesh.bufferVertex(positions);
-	// mesh.bufferTexCoords(coords);
-	// mesh.bufferIndices(indices);
-	// if(withNormals) {
-	// 	mesh.bufferNormal(normals);
-	// }
+	let mesh = new Mesh(drawType);
+	mesh.bufferVertex(positions);
+	mesh.bufferTexCoords(coords);
+	mesh.bufferIndices(indices);
+	if(withNormals) {
+		mesh.bufferNormal(normals);
+	}
 
-	return {positions, coords, indices};
+	return mesh
 };

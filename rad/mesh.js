@@ -2,7 +2,7 @@
 
 'use strict';
 
-import GL from './GLTool';
+import GL from './gl';
 import glm from 'gl-matrix';
 
 let gl;
@@ -45,7 +45,7 @@ class Mesh {
 
 	bufferNormal(mNormals, isDynamic=false) {
 
-		this.bufferData(mNormals, 'aNormal', 3, isDynamic);
+		this.bufferData(mNormals, 'aVertexNormal', 3, isDynamic);
 		this._normals = mNormals;
 
 	}
